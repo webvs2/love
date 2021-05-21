@@ -7,26 +7,60 @@
 	<body>
 		<script>
 			(function(info) {
-				// window.onload = function() {
-					var jqSrc = document.createElement('script');
-					jqSrc.src = 'https://lib.baomitu.com/jquery/3.6.0/jquery.js';
 
-					// .setAttribute('src','https://lib.baomitu.com/jquery/3.6.0/jquery.js');
-					// console.log(jqSrc.src,2)
-					document.body.appendChild(jqSrc);				
-						setTimeout(() => {
-						    //执行后 回调一个宏事件
-						    // console.log($)
-							var span=$('<span>').text('111🌹🌹🌹🌹🤞');
-							$('body').append(span) ;
-							
-						}, 100)
-						// setInterval(function(){
-						// 	console.log($)
-						// },1000)
+				// window.onload = function() {
+				var jqSrc = document.createElement('script');
+				jqSrc.src = 'https://lib.baomitu.com/jquery/3.6.0/jquery.js';
+
+				// .setAttribute('src','https://lib.baomitu.com/jquery/3.6.0/jquery.js');
+				// console.log(jqSrc.src,2)
+				document.body.appendChild(jqSrc);
+				setTimeout(() => {
+					//执行后 回调一个宏事件
+					// console.log($)
+					$('html').css({
+						'width': '100%',
+						'height': '100%',
+						'display': ' inline-block',
+						'position': 'relative',
+						
+						'margin': '0',
+						' text-align': 'center',
+						// 'padding-top':'30%',
+					});
+
+					$('body').css({
+						'width': '100%',
+						'height': '100%',
+						'margin': '0',
+						'position': 'absolute',
+						'top':0,
+						'left':0,
+						'bottom':0,
+						' text-align': 'center',
+						'display': ' inline-block',
+						// 'padding-top':'30%',
+						// 'background-image':'linear-gradient(to right, rgb(255, 129, 119) 0%, rgb(255, 134, 122) 0%, rgb(255, 140, 127) 21%, rgb(249, 145, 133) 52%, rgb(207, 85, 108) 78%, rgb(177, 42, 91) 100%)'
+						'background-image': 'linear-gradient(to top, rgb(255, 154, 158) 0%, rgb(254, 207, 239) 99%, rgb(254, 207, 239) 100%)'
+					})
+					var span = $('<span>').text('送你一朵玫瑰花🌹🌹🌹🌹🤞');
+
+					$('body').append(span);
+					$('span').css({
+						'color': '#f5576c',
+						'padding-top':'20%',
+						'font-size': '150%',
+						'font-width': '550',
+						'margin-left': '38%',
+						'display': ' inline-block',
+					});
+				}, 100)
+				// setInterval(function(){
+				// 	console.log($)
+				// },1000)
 				// };
 
-			// console.log($)
+				// console.log($)
 			})('自己')
 		</script>
 	</body>
