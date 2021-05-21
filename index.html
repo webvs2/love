@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			(function(info) {
+				// window.onload = function() {
+					var jqSrc = document.createElement('script');
+					jqSrc.src = 'https://lib.baomitu.com/jquery/3.6.0/jquery.js';
+
+					// .setAttribute('src','https://lib.baomitu.com/jquery/3.6.0/jquery.js');
+					// console.log(jqSrc.src,2)
+					document.body.appendChild(jqSrc);				
+						setTimeout(() => {
+						    //执行后 回调一个宏事件
+						    // console.log($)
+							var span=$('<span>').text('111🌹🌹🌹🌹🤞');
+							$('body').append(span) ;
+							
+						}, 100)
+						// setInterval(function(){
+						// 	console.log($)
+						// },1000)
+				// };
+
+			// console.log($)
+			})('自己')
+		</script>
+	</body>
+</html>
